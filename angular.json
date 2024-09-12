@@ -29,7 +29,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
               "node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
@@ -91,7 +92,8 @@
               {
                 "glob": "**/*",
                 "input": "public"
-              }
+              },
+              "src/assets"
             ],
             "styles": [
               "node_modules/@totvs/po-theme/css/po-theme-default-variables.min.css",
