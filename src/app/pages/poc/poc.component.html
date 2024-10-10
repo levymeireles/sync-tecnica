@@ -1,0 +1,58 @@
+<po-page-default>
+  <po-button
+    class="po-mb-5"
+    p-label="Open page slide"
+    (p-click)="pageSlideHistory.open()"
+  ></po-button>
+  <po-page-slide #pageSlideHistory p-title="Histórico" p-size="xl">
+    <p class="po-font-subtitle po-mb-4">
+      00988 - Manutenção Preventiva Cenerado Sky
+    </p>
+    <po-accordion>
+      <po-accordion-item p-label="Apontamento - Peças/materiais utilizados">
+        <p class="po-font-text-large">
+          <span class="po-font-text-large-bold">1 Un </span>94729 - Filtro de ar
+          900.
+        </p>
+        <p class="po-font-text-large">
+          <span class="po-font-text-large-bold">1 Un </span>09926 - Tubo 13mm
+        </p>
+      </po-accordion-item>
+
+      <po-accordion-item p-label="Apontamento - Peças/materiais solicitados">
+        <p class="po-font-text-large">
+          <span class="po-font-text-large-bold">1 Un </span>94729 - Filtro de ar
+          900.
+        </p>
+        <p class="po-font-text-large">
+          <span class="po-font-text-large-bold">1 Un </span>09926 - Tubo 13mm
+        </p>
+      </po-accordion-item>
+
+      <po-accordion-item p-label="Checklists do atendimento">
+        <p class="po-font-text-large">Não há Checklists realizados!</p>
+      </po-accordion-item>
+
+      <po-accordion-item p-label="Laudo do atendimento">
+        <p class="po-font-text-large">
+          Foi realizada a manutenção no ar condicionado do cliente, com a
+          substituição do filtro de ar e de um tubo de 13mm que apresentava
+          vazamento. O equipamento foi testado e está funcionando corretamente.
+        </p>
+      </po-accordion-item>
+
+      <po-accordion-item p-label="Assinatura e avaliação do cliente">
+        <p class="po-font-text-large">Assinatura do cliente</p>
+        <po-image
+          p-alt="assinatura do cliente"
+          p-src="./assets/assinatura_cliente.jpeg"
+        ></po-image>
+        <p class="po-font-text-large po-mt-3">Avaliação do cliente</p>
+        <app-star-rating
+          [rating]="userRating"
+          (ratingChange)="onRatingChange($event)"
+        ></app-star-rating>
+      </po-accordion-item>
+    </po-accordion>
+  </po-page-slide>
+</po-page-default>

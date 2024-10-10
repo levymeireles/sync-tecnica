@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { UsuarioComponent } from './pages/usuario/usuario.component';
+import { PocComponent } from './pages/poc/poc.component';
 
 export const routes: Routes = [
-  { path: 'usuarios', component: UsuarioComponent },
+  { path: 'proof-of-concepts', component: PocComponent },
 ];

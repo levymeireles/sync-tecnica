@@ -1,0 +1,13 @@
+.star-rating {
+  font-size: 24px;
+  color: lightgray;
+
+  .filled {
+    color: #006699; /* Cor das estrelas preenchidas */
+    cursor: pointer;
+  }
+  .star-rating span {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+}

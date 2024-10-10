@@ -21,7 +21,7 @@ export class NavMenuComponent {
   public readonly title: string = 'Sync Técnica';
   readonly menus: Array<PoMenuItem> = [
     { label: 'Home', action: this.onClick.bind(this) },
-    { label: 'Usuários', link: 'usuarios' },
+    { label: 'Proof of concept', link: 'proof-of-concepts' },
   ];
 
   private onClick() {
